@@ -46,7 +46,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.jvnet.hudson.test.JenkinsRule;
 import org.jvnet.hudson.test.FailureBuilder;
-import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerRequest2;
 
 public class FailureListenerTest {
 
@@ -127,7 +127,7 @@ public class FailureListenerTest {
             }
 
             @Override
-            public NodeMonitor newInstance(StaplerRequest req, JSONObject formData) throws FormException {
+            public NodeMonitor newInstance(StaplerRequest2 req, JSONObject formData) throws FormException {
                 return new TestNodeMonitor();
             }
         }

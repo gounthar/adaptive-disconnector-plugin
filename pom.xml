@@ -3,7 +3,8 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.19</version>
+    <version>5.18</version>
+    <relativePath />
   </parent>
 
   <groupId>org.jenkins-ci.plugins</groupId>
@@ -12,10 +13,10 @@
   <packaging>hpi</packaging>
   <name>Adaptive Disconnector Plugin</name>
   <description>Run node monitors after build failure to detect infrastructure problems early</description>
-  <url>http://wiki.jenkins-ci.org/display/JENKINS/Adaptive+Disconnector+Plugin</url>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/Adaptive+Disconnector+Plugin</url>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/adaptive-disconnector-plugin.git</connection>
+    <connection>scm:git:https://github.com/jenkinsci/adaptive-disconnector-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/adaptive-disconnector-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/adaptive-disconnector-plugin</url>
     <tag>HEAD</tag>
@@ -25,7 +26,6 @@
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-core</artifactId>
-      <version>1.2.1</version>
       <scope>test</scope>
     </dependency>
 
@@ -33,7 +33,6 @@
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>jenkins-core</artifactId>
-      <version>${jenkins.version}</version>
       <exclusions>
         <exclusion>
           <groupId>org.sonatype.sisu</groupId>
@@ -46,23 +45,22 @@
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <surefire.useFile>false</surefire.useFile>
-    <jenkins.version>1.609</jenkins.version>
-    <jenkins-test-harness.version>2.17</jenkins-test-harness.version>
-    <java.level>6</java.level>
+    <jenkins.version>2.492.3</jenkins.version>
+    <jenkins-test-harness.version>2462.v7cd38b_7a_361b_</jenkins-test-harness.version>
     <findbugs.skip>true</findbugs.skip>
   </properties>
 
